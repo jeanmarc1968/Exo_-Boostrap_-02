@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS style document Jean-Marc */
+
+body{
+    background: pink;
+}
+
+.orange{
+    background: orange;
+}
+
+.bleuclair{
+    background: lightblue;
+}
+
+.vertclair{
+    background: lightgreen;
+}
+
+.grisclair{
+    background: lightgrey;
+}
+
+.olive{
+    background: olive;
+}
+
+.blanc{
+    background: white;
+}
+
+.bg-tomato {
+    background: tomato;
+}
+
+/* pour le container ait la place */
+
+.marge-haute {
+    margin-top: 70px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo Boostrap - Accueil</title>
+     <!-- css boostrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> 
+     <!-- google font -->   
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+     <!-- feuille de style -->
+     <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <!-- la navbar -->
+
+    <!-- Image and text -->
+        <nav class="navbar bg-tomato">
+                <a class="navbar-brand" href="#">
+                  <img src="img/picto_20home_20BLANC0.gif" width="30" height="30" class="d-inline-block align-top" alt="maison">
+                  Maison
+                </a>
+              </nav>
+    <div class="container blanc marge-haute p-2">
+        <div class="row d-flex m-2 p-1 orange">
+            <div class="order-2 order-sm-2 order-md-1 order-xl-1 col-md-3 col-xl-3 orange">col 01 rangée 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, cum vel saepe autem ratione reiciendis consequatur, molestiae similique voluptates ut, facilis facere debitis corrupti modi! Praesentium excepturi dolore modi id.</div>
+            <div class="order-1 order-sm-1 order-md-2 order-xl-2 col-md-9 col-xl-9 bleuclair">col 02 rangée 1
+            <h1>Le diaporama</h1>
+            
+            <div>
+                <img src="img/02.jpg" alt="slider" id="monImage">
+            </div>
+            <script>
+                var images = ['img/03.jpg', 'img/04.jpg', 'img/05.jpg'];
+                var indice = 1; 
+                var baliseImage = document.querySelector('#monImage');
+                
+        function changeImage() {
+            baliseImage.src = images[indice];
+            indice++;
+            if (indice == images.length) {
+                clearInterval(timer); 
+            }
+        } 
+            </script>
+        </div>
+        </div> <!-- fin rangée 1 -->
+        <div class="row m-2 p-1 orange">
+            <div class="col-sm-12 col-md-12 col-xl-4 vertclair">col 01 rangée 1</div>
+            <div class="col-sm-12 col-md-4 col-xl-4 blanc">col 02 rangée 2</div>
+            <div class="col-sm-12 col-md-8 col-xl-4 olive">col 03 rangée 3</div>
+        </div><!--  fin rangée 2 -->
+
+
+    </div> <!-- fin container -->
+    <h1>Coucou</h1>
+
+        <!-- JS boostrap Le tout en cdn -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <!-- mon js -->
+        <script src="JS/Script.js"></script>
+</body>
+</html>
